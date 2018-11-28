@@ -1,0 +1,52 @@
+@import 'variables';
+
+$btn-border-width: 3px;
+
+.btn {
+  position: relative;
+  padding: 5px 15px;
+  background: white;
+  font-family: $font-family;
+  font-size: $font-size;
+  text-transform: uppercase;
+  border: $btn-border-width solid transparent;
+  transition: 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    padding: 5px 25px;
+    background: $color-brand;
+    color: white;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &:disabled,
+  &[disabled] {
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -($btn-border-width);
+      right: -($btn-border-width);
+      bottom: -($btn-border-width);
+      left: -($btn-border-width);
+      background: hsla(0, 0%, 0%, 0.3);
+    }
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &--primary {
+    background: $color-brand;
+    color: white;
+
+    &:hover {
+      background: $color-brand-dark;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import 'variables';
+
+.login {
+  width: 400px;
+  border-radius: 3px;
+  box-shadow: $box-shadow-dark;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    background: white;
+    border-bottom: 10px solid $color-brand;
+
+    &__img {
+      height: 150px;
+      width: 150px;
+    }
+
+    &__text {
+      margin: 10px 0;
+      font-family: $font-family-brand;
+    }
+  }
+}

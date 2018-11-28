@@ -1,0 +1,32 @@
+@import 'variables';
+
+.form {
+  padding: 50px;
+  background: $color-primary;
+  color: white;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+
+    input {
+      padding: 10px 20px;
+      margin-bottom: 2.5px;
+      border: none;
+      border-radius: 999px;
+      box-shadow: $box-shadow-inset;
+      font-size: $font-size;
+
+      &:focus {
+        outline: none;
+        box-shadow: $box-shadow-inset-dark;
+      }
+    }
+  }
+
+  &__button {
+    margin: 0;
+    text-align: right;
+  }
+}

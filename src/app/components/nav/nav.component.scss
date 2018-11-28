@@ -1,0 +1,36 @@
+@import 'variables';
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 20px;
+  background: $color-primary;
+  box-shadow: $box-shadow;
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+
+    a {
+      display: flex;
+      height: 60px;
+      width: 60px;
+      color: inherit;
+      text-decoration: none;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+
+      h1 {
+        margin: 0;
+      }
+    }
+  }
+}
